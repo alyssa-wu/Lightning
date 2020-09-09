@@ -14,7 +14,7 @@ void setup()
   size(400,400);
   strokeWeight(2);
   background(57,126,130);
-  img = loadImage("LightningBending3.jpg");
+  img = loadImage("LightningBending.jpg");
 }
 
 void draw()
