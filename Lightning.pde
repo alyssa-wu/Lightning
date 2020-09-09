@@ -12,7 +12,7 @@ void setup()
   size(400,400);
   strokeWeight(2);
   background(0,0,60);
-  img = loadImage("LightningBending.png");
+  img = loadImage("LightningBending2.jpg");
 }
 
 void draw()
@@ -27,8 +27,8 @@ void draw()
     startX = endX;
     startY = endY;
   }
-  image(img,300,150); //Draw image to screen at coord (0,0)
-  //showMouseCoordinates();
+  img.resize(101,128);
+  image(img,0,150); //Draw image to screen at coord (0,0)
 }
 void mousePressed()
 {
@@ -37,9 +37,3 @@ void mousePressed()
   endX = 0;
   endY = 150;
 }
-
-//void showMouseCoordinates() {
-//  fill(255,0,0);
-//  textSize(16);
-//  text("("+round(mouseX)+","+round(mouseY)+")", mouseX-15, mouseY);
-//}
