@@ -16,10 +16,20 @@ void setup()
 void draw()
 {
   stroke(r,g,b);
-  ellipse(150,150,30,30);
+  while (endX <= 300)
+  {
+    endX = startX + (int)(Math.random()*10);
+    endY = startY + (int)(Math.random()*19)-10;
+    line(startX,startY,endX,endY);
+    startX = endX;
+    startY = endY;
+  }
 }
 void mousePressed()
 {
-
+  startX = 0;
+  startY = 150;
+  endX = 0;
+  endY = 150;
 }
 
