@@ -1,3 +1,4 @@
+PImage img; //Declare a var of the type Pimage
 int startX = 0;
 int startY = 150;
 int endX = 0;
@@ -8,13 +9,15 @@ int b = (int)(Math.random()*256);
 
 void setup()
 {
-  size(300,300);
+  size(400,400);
   strokeWeight(2);
   background(0,0,60);
+  img = loadImage("LightningBending.png");
 }
 
 void draw()
 {
+  //background(0,0,60);
   stroke(r,g,b);
   while (endX <= 300)
   {
@@ -24,6 +27,8 @@ void draw()
     startX = endX;
     startY = endY;
   }
+  image(img,300,150); //Draw image to screen at coord (0,0)
+  //showMouseCoordinates();
 }
 void mousePressed()
 {
@@ -33,3 +38,8 @@ void mousePressed()
   endY = 150;
 }
 
+//void showMouseCoordinates() {
+//  fill(255,0,0);
+//  textSize(16);
+//  text("("+round(mouseX)+","+round(mouseY)+")", mouseX-15, mouseY);
+//}
