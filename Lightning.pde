@@ -13,14 +13,14 @@ void setup()
 {
   size(400,400);
   strokeWeight(2);
-  background(0,0,60);
+  background(57,126,130);
   img = loadImage("LightningBending2.jpg");
 }
 
 void draw()
 {
   //background(0,0,60);
-  stroke(r,g,b);
+  stroke(255,255,255);
   while (endX <= 400)
   {
     endX = startX + (int)(Math.random()*10);
