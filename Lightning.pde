@@ -43,6 +43,6 @@ void mousePressed()
 
 void keyPressed() 
 {
-    background(57,126,130);
+  background(57,126,130);
 }
-  
+    
