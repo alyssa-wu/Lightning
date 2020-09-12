@@ -18,19 +18,23 @@ void setup()
 }
 
 void draw()
-{
-  //background(0,0,60);
-  stroke(255,255,255);
+{ 
+  
+  fill(57,126,130,10);
+  rect(0,0,400,400);
   while (endX <= 400)
   {
+    stroke(255,255,255);
     endX = startX + (int)(Math.random()*10);
     endY = startY + (int)(Math.random()*19)-10;
     line(startX,startY,endX,endY);
     startX = endX;
     startY = endY;
   }
+  //noStroke();
   img.resize(101,128);
   image(img,0,150);
+  
   
   //showMouseCoordinates();
 }
