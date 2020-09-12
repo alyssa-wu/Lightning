@@ -3,9 +3,6 @@ int startX = 101;
 int startY = 185;
 int endX = 101;
 int endY = 185;
-int r = (int)(Math.random()*256);
-int g = (int)(Math.random()*256);
-int b = (int)(Math.random()*256);
 
 //coord of Zuko's finger is (101,185)
 
@@ -31,13 +28,11 @@ void draw()
     startX = endX;
     startY = endY;
   }
-  //noStroke();
   img.resize(101,128);
   image(img,0,150);
-  
-  
-  //showMouseCoordinates();
+   
 }
+
 void mousePressed()
 {
   startX = 101;
@@ -46,9 +41,8 @@ void mousePressed()
   endY = 185;
 }
 
-
-//void showMouseCoordinates() {
-//  fill(255,0,0);
-//  textSize(16);
-//  text("("+round(mouseX)+","+round(mouseY)+")", mouseX-15, mouseY);
-//}
+void keyPressed() 
+{
+    background(57,126,130);
+}
+  
